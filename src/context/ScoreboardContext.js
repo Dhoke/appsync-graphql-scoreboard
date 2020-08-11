@@ -11,7 +11,7 @@ class ScoreBoardContextProvider extends Component {
         challengers: []
     }
 
-    // AWS configuratoin
+    // AWS configuration
     apiKey = 'da2-4zcr3xolajdqxfprflmgg23hl4'
     url = awsExports.ENDPOINT
     region = awsExports.REGION
