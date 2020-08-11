@@ -143,7 +143,6 @@ class ScoreBoardContextProvider extends Component {
 
     constructor() {
         super()
-        console.log("Render is being called!")
         this.client.hydrated().then(client => {
             const observable = client.subscribe({ query: this.newContenderSubscription })
             const scoreUpdates = client.subscribe({ query: this.scoreUpdateSubscription })
@@ -173,8 +172,6 @@ class ScoreBoardContextProvider extends Component {
     }
 
     render() {
-        console.log("Render is being called!")
-
         return (
             <ScoreboardContext.Provider value={{
                 challengers: this.state.challengers,
