@@ -76,8 +76,7 @@ class ScoreBoardContextProvider extends Component {
         auth: {
             type: this.auth_type,
             apiKey: this.apiKey,
-        },
-        fetchPolicy: 'network-only'
+        }
     });
 
     // Updates the current state to reflect changes
